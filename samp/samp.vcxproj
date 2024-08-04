@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\armhook\armhook.cpp" />
+    <ClCompile Include="sources\chat.cpp" />
+    <ClCompile Include="sources\cmdprocs.cpp" />
+    <ClCompile Include="sources\dialog.cpp" />
+    <ClCompile Include="sources\extrakeyboard.cpp" />
+    <ClCompile Include="sources\game\aimstuff.cpp" />
+    <ClCompile Include="sources\game\audiostream.cpp" />
+    <ClCompile Include="sources\game\camera.cpp" />
+    <ClCompile Include="sources\game\entity.cpp" />
+    <ClCompile Include="sources\game\font.cpp" />
+    <ClCompile Include="sources\game\game.cpp" />
+    <ClCompile Include="sources\game\hooks.cpp" />
+    <ClCompile Include="sources\game\object.cpp" />
+    <ClCompile Include="sources\game\pad.cpp" />
+    <ClCompile Include="sources\game\patches.cpp" />
+    <ClCompile Include="sources\game\playerped.cpp" />
+    <ClCompile Include="sources\game\quaternion.cpp" />
+    <ClCompile Include="sources\game\radarcolors.cpp" />
+    <ClCompile Include="sources\game\rgba.cpp" />
+    <ClCompile Include="sources\game\RW\RenderWare.cpp" />
+    <ClCompile Include="sources\game\scripting.cpp" />
+    <ClCompile Include="sources\game\splashscreen.cpp" />
+    <ClCompile Include="sources\game\sprite2d.cpp" />
+    <ClCompile Include="sources\game\textdraw.cpp" />
+    <ClCompile Include="sources\game\util.cpp" />
+    <ClCompile Include="sources\game\vehicle.cpp" />
+    <ClCompile Include="sources\keyboard.cpp" />
+    <ClCompile Include="sources\main.cpp" />
+    <ClCompile Include="sources\net\gangzonepool.cpp" />
+    <ClCompile Include="sources\net\localplayer.cpp" />
+    <ClCompile Include="sources\net\netgame.cpp" />
+    <ClCompile Include="sources\net\netrpc.cpp" />
+    <ClCompile Include="sources\net\objectpool.cpp" />
+    <ClCompile Include="sources\net\pickuppool.cpp" />
+    <ClCompile Include="sources\net\playerpool.cpp" />
+    <ClCompile Include="sources\net\remoteplayer.cpp" />
+    <ClCompile Include="sources\net\scriptrpc.cpp" />
+    <ClCompile Include="sources\net\textdrawpool.cpp" />
+    <ClCompile Include="sources\net\textlabelpool.cpp" />
+    <ClCompile Include="sources\net\vehiclepool.cpp" />
+    <ClCompile Include="sources\playertags.cpp" />
+    <ClCompile Include="sources\spawnscreen.cpp" />
+    <ClCompile Include="sources\ui\ui.cpp" />
+    <ClCompile Include="sources\ui\imguirender.cpp" />
+    <ClCompile Include="sources\vendor\imgui\imgui.cpp" />
+    <ClCompile Include="sources\vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="sources\vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="sources\vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="sources\vendor\inih\cpp\INIReader.cpp" />
+    <ClCompile Include="sources\vendor\inih\ini.c" />
+    <ClCompile Include="sources\vendor\raknet\AsynchronousFileIO.cpp" />
+    <ClCompile Include="sources\vendor\raknet\BitStream.cpp" />
+    <ClCompile Include="sources\vendor\raknet\BitStream_NoTemplate.cpp" />
+    <ClCompile Include="sources\vendor\raknet\CheckSum.cpp" />
+    <ClCompile Include="sources\vendor\raknet\CommandParserInterface.cpp" />
+    <ClCompile Include="sources\vendor\raknet\DataBlockEncryptor.cpp" />
+    <ClCompile Include="sources\vendor\raknet\DataCompressor.cpp" />
+    <ClCompile Include="sources\vendor\raknet\DS_ByteQueue.cpp" />
+    <ClCompile Include="sources\vendor\raknet\DS_HuffmanEncodingTree.cpp" />
+    <ClCompile Include="sources\vendor\raknet\DS_Table.cpp" />
+    <ClCompile Include="sources\vendor\raknet\EncodeClassName.cpp" />
+    <ClCompile Include="sources\vendor\raknet\ExtendedOverlappedPool.cpp" />
+    <ClCompile Include="sources\vendor\raknet\FileOperations.cpp" />
+    <ClCompile Include="sources\vendor\raknet\GetTime.cpp" />
+    <ClCompile Include="sources\vendor\raknet\InternalPacketPool.cpp" />
+    <ClCompile Include="sources\vendor\raknet\LinuxStrings.cpp" />
+    <ClCompile Include="sources\vendor\raknet\LogCommandParser.cpp" />
+    <ClCompile Include="sources\vendor\raknet\NetworkTypes.cpp" />
+    <ClCompile Include="sources\vendor\raknet\PluginInterface.cpp" />
+    <ClCompile Include="sources\vendor\raknet\RakClient.cpp" />
+    <ClCompile Include="sources\vendor\raknet\RakNetCommandParser.cpp" />
+    <ClCompile Include="sources\vendor\raknet\RakNetStatistics.cpp" />
+    <ClCompile Include="sources\vendor\raknet\RakNetworkFactory.cpp" />
+    <ClCompile Include="sources\vendor\raknet\RakPeer.cpp" />
+    <ClCompile Include="sources\vendor\raknet\rakserver.cpp" />
+    <ClCompile Include="sources\vendor\raknet\RakSleep.cpp" />
+    <ClCompile Include="sources\vendor\raknet\Rand.cpp" />
+    <ClCompile Include="sources\vendor\raknet\ReliabilityLayer.cpp" />
+    <ClCompile Include="sources\vendor\raknet\rijndael.cpp" />
+    <ClCompile Include="sources\vendor\raknet\RPCMap.cpp" />
+    <ClCompile Include="sources\vendor\raknet\SAMP\SAMPRPC.cpp" />
+    <ClCompile Include="sources\vendor\raknet\SAMP\samp_auth.cpp" />
+    <ClCompile Include="sources\vendor\raknet\SAMP\samp_netencr.cpp" />
+    <ClCompile Include="sources\vendor\raknet\SHA1.cpp" />
+    <ClCompile Include="sources\vendor\raknet\SimpleMutex.cpp" />
+    <ClCompile Include="sources\vendor\raknet\SocketLayer.cpp" />
+    <ClCompile Include="sources\vendor\raknet\StringCompressor.cpp" />
+    <ClCompile Include="sources\vendor\raknet\StringTable.cpp" />
+    <ClCompile Include="sources\vendor\raknet\SystemAddressList.cpp" />
+    <ClCompile Include="sources\vendor\raknet\SystemDatabaseClient.cpp" />
+    <ClCompile Include="sources\vendor\raknet\SystemDatabaseServer.cpp" />
+    <ClCompile Include="sources\vendor\raknet\TableSerializer.cpp" />
+    <ClCompile Include="sources\vendor\raknet\TCPInterface.cpp" />
+    <ClCompile Include="sources\vendor\raknet\TelnetTransport.cpp" />
+    <ClCompile Include="sources\vendor\raknet\_findfirst.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\armhook\armhook.h" />
+    <ClInclude Include="sources\chat.h" />
+    <ClInclude Include="sources\cmdprocs.h" />
+    <ClInclude Include="sources\dialog.h" />
+    <ClInclude Include="sources\extrakeyboard.h" />
+    <ClInclude Include="sources\game\aimstuff.h" />
+    <ClInclude Include="sources\game\audiostream.h" />
+    <ClInclude Include="sources\game\camera.h" />
+    <ClInclude Include="sources\game\common.h" />
+    <ClInclude Include="sources\game\entity.h" />
+    <ClInclude Include="sources\game\font.h" />
+    <ClInclude Include="sources\game\game.h" />
+    <ClInclude Include="sources\game\object.h" />
+    <ClInclude Include="sources\game\pad.h" />
+    <ClInclude Include="sources\game\playerped.h" />
+    <ClInclude Include="sources\game\quaternion.h" />
+    <ClInclude Include="sources\game\radarcolors.h" />
+    <ClInclude Include="sources\game\rgba.h" />
+    <ClInclude Include="sources\game\RW\RenderWare.h" />
+    <ClInclude Include="sources\game\RW\rpcriter.h" />
+    <ClInclude Include="sources\game\RW\rperror.h" />
+    <ClInclude Include="sources\game\RW\rphanim.h" />
+    <ClInclude Include="sources\game\RW\rpmatfx.h" />
+    <ClInclude Include="sources\game\RW\rpskin.h" />
+    <ClInclude Include="sources\game\RW\rpuvanim.h" />
+    <ClInclude Include="sources\game\RW\rpworld.h" />
+    <ClInclude Include="sources\game\RW\rtanim.h" />
+    <ClInclude Include="sources\game\RW\rtdict.h" />
+    <ClInclude Include="sources\game\RW\rtquat.h" />
+    <ClInclude Include="sources\game\RW\rwcore.h" />
+    <ClInclude Include="sources\game\RW\rwlpcore.h" />
+    <ClInclude Include="sources\game\RW\rwplcore.h" />
+    <ClInclude Include="sources\game\RW\skeleton.h" />
+    <ClInclude Include="sources\game\scripting.h" />
+    <ClInclude Include="sources\game\sprite2d.h" />
+    <ClInclude Include="sources\game\textdraw.h" />
+    <ClInclude Include="sources\game\util.h" />
+    <ClInclude Include="sources\game\vehicle.h" />
+    <ClInclude Include="sources\keyboard.h" />
+    <ClInclude Include="sources\main.h" />
+    <ClInclude Include="sources\net\gangzonepool.h" />
+    <ClInclude Include="sources\net\localplayer.h" />
+    <ClInclude Include="sources\net\netgame.h" />
+    <ClInclude Include="sources\net\objectpool.h" />
+    <ClInclude Include="sources\net\pickuppool.h" />
+    <ClInclude Include="sources\net\playerpool.h" />
+    <ClInclude Include="sources\net\remoteplayer.h" />
+    <ClInclude Include="sources\net\textdrawpool.h" />
+    <ClInclude Include="sources\net\textlabelpool.h" />
+    <ClInclude Include="sources\net\vehiclepool.h" />
+    <ClInclude Include="sources\playertags.h" />
+    <ClInclude Include="sources\spawnscreen.h" />
+    <ClInclude Include="sources\ui\ui.h" />
+    <ClInclude Include="sources\ui\imguirender.h" />
+    <ClInclude Include="sources\vendor\imgui\imconfig.h" />
+    <ClInclude Include="sources\vendor\imgui\imgui.h" />
+    <ClInclude Include="sources\vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="sources\vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="sources\vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="sources\vendor\imgui\imstb_truetype.h" />
+    <ClInclude Include="sources\vendor\inih\cpp\INIReader.h" />
+    <ClInclude Include="sources\vendor\inih\ini.h" />
+    <ClInclude Include="sources\vendor\raknet\AsynchronousFileIO.h" />
+    <ClInclude Include="sources\vendor\raknet\AutopatcherPatchContext.h" />
+    <ClInclude Include="sources\vendor\raknet\AutopatcherRepositoryInterface.h" />
+    <ClInclude Include="sources\vendor\raknet\BigTypes.h" />
+    <ClInclude Include="sources\vendor\raknet\BitStream.h" />
+    <ClInclude Include="sources\vendor\raknet\BitStream_NoTemplate.h" />
+    <ClInclude Include="sources\vendor\raknet\CheckSum.h" />
+    <ClInclude Include="sources\vendor\raknet\ClientContextStruct.h" />
+    <ClInclude Include="sources\vendor\raknet\CommandParserInterface.h" />
+    <ClInclude Include="sources\vendor\raknet\ConsoleServer.h" />
+    <ClInclude Include="sources\vendor\raknet\DataBlockEncryptor.h" />
+    <ClInclude Include="sources\vendor\raknet\DataCompressor.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_BinarySearchTree.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_BPlusTree.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_ByteQueue.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_Heap.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_HuffmanEncodingTree.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_HuffmanEncodingTreeFactory.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_HuffmanEncodingTreeNode.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_LinkedList.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_List.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_Map.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_MemoryPool.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_OrderedChannelHeap.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_OrderedList.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_Queue.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_QueueLinkedList.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_RangeList.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_Table.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_Tree.h" />
+    <ClInclude Include="sources\vendor\raknet\DS_WeightedGraph.h" />
+    <ClInclude Include="sources\vendor\raknet\EmailSender.h" />
+    <ClInclude Include="sources\vendor\raknet\Export.h" />
+    <ClInclude Include="sources\vendor\raknet\ExtendedOverlappedPool.h" />
+    <ClInclude Include="sources\vendor\raknet\FileOperations.h" />
+    <ClInclude Include="sources\vendor\raknet\FullyConnectedMesh.h" />
+    <ClInclude Include="sources\vendor\raknet\GetTime.h" />
+    <ClInclude Include="sources\vendor\raknet\InternalPacket.h" />
+    <ClInclude Include="sources\vendor\raknet\InternalPacketPool.h" />
+    <ClInclude Include="sources\vendor\raknet\LinuxStrings.h" />
+    <ClInclude Include="sources\vendor\raknet\LogCommandParser.h" />
+    <ClInclude Include="sources\vendor\raknet\MTUSize.h" />
+    <ClInclude Include="sources\vendor\raknet\multiplayer.h" />
+    <ClInclude Include="sources\vendor\raknet\NetworkIDGenerator.h" />
+    <ClInclude Include="sources\vendor\raknet\NetworkTypes.h" />
+    <ClInclude Include="sources\vendor\raknet\PacketEnumerations.h" />
+    <ClInclude Include="sources\vendor\raknet\PacketPool.h" />
+    <ClInclude Include="sources\vendor\raknet\PacketPriority.h" />
+    <ClInclude Include="sources\vendor\raknet\PluginInterface.h" />
+    <ClInclude Include="sources\vendor\raknet\RakAssert.h" />
+    <ClInclude Include="sources\vendor\raknet\RakClient.h" />
+    <ClInclude Include="sources\vendor\raknet\RakClientInterface.h" />
+    <ClInclude Include="sources\vendor\raknet\RakNetCommandParser.h" />
+    <ClInclude Include="sources\vendor\raknet\RakNetDefines.h" />
+    <ClInclude Include="sources\vendor\raknet\RakNetStatistics.h" />
+    <ClInclude Include="sources\vendor\raknet\RakNetworkFactory.h" />
+    <ClInclude Include="sources\vendor\raknet\RakPeer.h" />
+    <ClInclude Include="sources\vendor\raknet\RakPeerInterface.h" />
+    <ClInclude Include="sources\vendor\raknet\RakServer.h" />
+    <ClInclude Include="sources\vendor\raknet\RakServerInterface.h" />
+    <ClInclude Include="sources\vendor\raknet\RakSleep.h" />
+    <ClInclude Include="sources\vendor\raknet\Rand.h" />
+    <ClInclude Include="sources\vendor\raknet\ReliabilityLayer.h" />
+    <ClInclude Include="sources\vendor\raknet\Replica.h" />
+    <ClInclude Include="sources\vendor\raknet\ReplicaEnums.h" />
+    <ClInclude Include="sources\vendor\raknet\rijndael-boxes.h" />
+    <ClInclude Include="sources\vendor\raknet\rijndael.h" />
+    <ClInclude Include="sources\vendor\raknet\RouterInterface.h" />
+    <ClInclude Include="sources\vendor\raknet\RPCMap.h" />
+    <ClInclude Include="sources\vendor\raknet\RPCNode.h" />
+    <ClInclude Include="sources\vendor\raknet\RSACrypt.h" />
+    <ClInclude Include="sources\vendor\raknet\SAMP\SAMPRPC.h" />
+    <ClInclude Include="sources\vendor\raknet\SAMP\samp_netencr.h" />
+    <ClInclude Include="sources\vendor\raknet\SHA1.h" />
+    <ClInclude Include="sources\vendor\raknet\SimpleMutex.h" />
+    <ClInclude Include="sources\vendor\raknet\SimpleTCPServer.h" />
+    <ClInclude Include="sources\vendor\raknet\SingleProducerConsumer.h" />
+    <ClInclude Include="sources\vendor\raknet\SocketLayer.h" />
+    <ClInclude Include="sources\vendor\raknet\StringCompressor.h" />
+    <ClInclude Include="sources\vendor\raknet\StringTable.h" />
+    <ClInclude Include="sources\vendor\raknet\SystemAddressList.h" />
+    <ClInclude Include="sources\vendor\raknet\SystemDatabaseClient.h" />
+    <ClInclude Include="sources\vendor\raknet\SystemDatabaseServer.h" />
+    <ClInclude Include="sources\vendor\raknet\TableSerializer.h" />
+    <ClInclude Include="sources\vendor\raknet\TCPInterface.h" />
+    <ClInclude Include="sources\vendor\raknet\TelnetTransport.h" />
+    <ClInclude Include="sources\vendor\raknet\ThreadPool.h" />
+    <ClInclude Include="sources\vendor\raknet\TransportInterface.h" />
+    <ClInclude Include="sources\vendor\raknet\Types.h" />
+    <ClInclude Include="sources\vendor\raknet\_findfirst.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sources\game\RW\errcom.def" />
+    <None Include="sources\game\RW\errcore.def" />
+    <None Include="sources\vendor\raknet\FullyConnectedMesh.cpp__" />
+    <None Include="sources\vendor\raknet\NetworkIDGenerator.cpp__" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97d17177-2407-476b-bf4a-7eeb3df46d23}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>samp</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+    <ProjectName>AI JohnPeria 2.0™</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-14</AndroidAPILevel>
+    <UseOfStl>gnustl_static</UseOfStl>
+    <ThumbMode>Thumb</ThumbMode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <LibraryPath>D:\projects\samp-android-2.0\client\samp\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>RAKSAMP_CLIENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <FloatABI>soft</FloatABI>
+      <OmitFramePointers>false</OmitFramePointers>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <DataLevelLinking>false</DataLevelLinking>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <StrictAliasing>true</StrictAliasing>
+      <AdditionalOptions>-fpack-struct=1 -fvisibility=hidden</AdditionalOptions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <Relocation>true</Relocation>
+      <FunctionBinding>true</FunctionBinding>
+      <NoExecStackRequired>true</NoExecStackRequired>
+      <LibraryDependencies>m;GLESv2;z;%(LibraryDependencies)</LibraryDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
